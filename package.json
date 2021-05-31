@@ -1,15 +1,28 @@
 {
   "name": "divzoom",
-  "version": "0.0.10",
-  "description": "",
+  "version": "0.0.12",
+  "description": "Let's zoom in and out of DIV with touch event",
   "main": "index.js",
    "browser": "./browser/specific/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "zoom"
+    "zoom",
+    "div",
+    "touch"
   ],
-  "author": "coheonsb",
-  "license": "MIT"
+  "author": {
+    "name": "byeol",
+    "email": "coheonsb@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coheonsb/divZoom",
+    "email": "coheonsb@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coheonsb/divZoom.git"
+  }
 }
