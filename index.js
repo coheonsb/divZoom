@@ -20,6 +20,7 @@
         }
         this.scroller = this.wrapper.children[i]
       }
+    if(!this.scroller) return
     this.scrollerStyle = this.scroller.style;
 
     const innerH = window.innerHeight || document.body.clientHeight;
