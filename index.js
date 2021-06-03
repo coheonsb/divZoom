@@ -1,4 +1,5 @@
   var ZoomContent = function(el, options) {
+    if(!el) return
     const rAF =
       window.requestAnimationFrame ||
       window.webkitRequestAnimationFrame ||
@@ -11,13 +12,14 @@
 
     const utils = ZoomContent.utils
     this.wrapper = typeof el === "string" ? document.querySelector(el) : el;
+    if (!this.wrapper || !this.wrapper.children) return
     // script tag가 포함될 수 있으므로 제외하는 로직 추가
-    for (i = 0; i < this.wrapper.children.length; i++) {
-      if (this.wrapper.children[i].tagName === "SCRIPT") {
-        continue;
+      for (i = 0; i < this.wrapper.children.length; i++) {
+        if (this.wrapper.children[i].tagName === 'SCRIPT') {
+          continue
+        }
+        this.scroller = this.wrapper.children[i]
       }
-      this.scroller = this.wrapper.children[i];
-    }
     this.scrollerStyle = this.scroller.style;
 
     const innerH = window.innerHeight || document.body.clientHeight;
