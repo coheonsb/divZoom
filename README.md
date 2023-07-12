@@ -1,6 +1,6 @@
 # DIVZOOM
 
-Let's zoom in and out of DIV with touch event
+Let's zoom in and out of DIV with touch event (pinch)
 
 Useful when only certain areas need to be zoomed in or out
 
